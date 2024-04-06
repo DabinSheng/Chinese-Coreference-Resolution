@@ -30,8 +30,10 @@ abstract：
 故要在一个batch训练完后及时释放部分已用完数据的显存，batch_size调的小一点，如果还是爆显存可以考虑关闭GPU的并行计算用调试方法运行。
 4.评价标准：accurracy，recall，prcision，F1_score，PR图
 requirement：
-python=3,0
-torch>2.0
+python=3.9.18
+torch=2.0.0+cu117
+torchvision=0.15.1+cu117
+visdom=0.2.4
 其余包自配
 attention：
 文件给出了详细的源码和注释，同届同学请勿抄袭，每届作业不同，后来者可参考
